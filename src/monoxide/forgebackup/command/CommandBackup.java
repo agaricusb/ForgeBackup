@@ -4,6 +4,7 @@ import monoxide.forgebackup.BackupLog;
 import monoxide.forgebackup.ForgeBackup;
 import monoxide.forgebackup.backup.Backup;
 import net.minecraft.command.ICommandSender;
+import net.minecraft.command.ICommand;
 import net.minecraft.entity.player.EntityPlayer;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
 
@@ -67,4 +68,11 @@ public class CommandBackup extends CommandBackupBase {
 	public String getCommandUsage(ICommandSender sender) {
 		return "/" + this.getCommandName() + " [run|full|reload]";
 	}
+
+    // synthetic method (TODO: fix in SSMP, then remove here)
+    public int compareTo(Object par1Obj)
+    {
+        return this.compareNameTo((ICommand)par1Obj);
+    }
+    //
 }
