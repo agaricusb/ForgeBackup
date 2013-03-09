@@ -7,9 +7,9 @@
   <url>https://github.com/monoxide0184/ForgeBackup</url>
 
   <parent>
-    <groupId>net.minecraftforge</groupId>
+    <groupId>net.md-5</groupId>
     <artifactId>ForgeMod</artifactId>
-    <version>1.4.7-6.6.2</version>
+    <version>1.4.7-6.6.2.534-R2</version>
   </parent>
 
   <dependencies>
